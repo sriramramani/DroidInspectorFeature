@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<feature
+      id="com.sriramramani.droid.inspector.feature"
+      label="Droid Inspector"
+      version="0.1.0.qualifier"
+      provider-name="Sriram Ramani">
+
+   <description url="http://www.sriramramani.com/droidinspector/">
+      Droid Inspector
+   </description>
+
+   <license url="http://www.mozilla.org/MPL/2.0/">
+      Note: PNGDecoder.jar is an utility library from from http://twl.l33tlabs.org/
+         commons-codec-1.8.jar is licensed under APL. You can find a copy at http://www.apache.org/licenses/LICENSE-2.0
+         The rest of code, unless otherwise specified, are licensed under MPL 2.0.
+
+   This Source Code Form is subject to the terms of the Mozilla Public
+   License, v. 2.0. If a copy of the MPL was not distributed with this
+   file, You can obtain one at http://mozilla.org/MPL/2.0/.
+   </license>
+
+   <url>
+      <update label="Droid Inspector Update Site" url="http://www.sriramramani.com/droidinspector/eclipse/"/>
+      <discovery label="LWJGL update site" url="http://jevopi.de/updatesite/org.lwjgl.updatesite/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="com.android.ide.eclipse.ddms"/>
+      <import plugin="org.lwjgl" version="2.8.4" match="equivalent"/>
+   </requires>
+
+   <plugin
+         id="com.sriramramani.droid.inspector"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
